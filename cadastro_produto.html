@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito PetShop | Cadastro de produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
+    <link rel="stylesheet" href="./assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegação">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Produtos</a></li>
+                <li class="cabecalho__link"><a href="lista_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titlu">Cadastrar um produto</h1>
+            <form action="./cadastro_produto_concluido.html" class="flex flex--coluna">
+                <div class="input-container">
+                    <input type="text" name="nome" id="nome" class="input" placeholder="Nome">
+                    <label class="input-label" for="nome">Nome</label>
+                    <span class="input-mensagen-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container cadastro__preco-container">
+                    <input type="text" name="preco" id="preco" class="input" placeholder="Preço">
+                    <label class="input-label" for="preco">Preço</label>
+                    <span class="input-mensagen-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container cadastro__descricao-container">
+                    <input class="input" type="text" name="descricao" id="descricao" placeholder="Descrição">
+                    <label class="input-label" for="descricao">Descrição</label>
+                    <span class="input-mensagen-erro">Este campo não está válido</span>
+                </div>
+                <button class="botao">Cadastrar produto</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
